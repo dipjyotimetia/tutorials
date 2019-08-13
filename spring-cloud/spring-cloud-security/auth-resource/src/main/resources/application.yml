@@ -5,10 +5,8 @@ server:
 
 # Configure the public key to use for verifying the incoming JWT tokens
 security:
-  sessions: NEVER
   oauth2:
     resource:
-      userInfoUri: http://localhost:7070/authserver/user
       jwt:
         keyValue: |
             -----BEGIN PUBLIC KEY-----
